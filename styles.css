@@ -1,0 +1,275 @@
+/* --- Загальні стилі для сторінки --- */
+
+/* Додаємо стилі для блоків контенту, які будуть розміщуватися після хедера */
+.main-content {
+    padding: 40px 80px;
+    min-height: calc(100vh - 80px); /* Забезпечує, що контент займає висоту екрана */
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: var(--light-text);
+}
+
+/* --- Форма входу (Знімок 2: Log In) --- */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--dark-card);
+    border-radius: 15px;
+    padding: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.login-form h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--light-text);
+}
+
+.input-field {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #444;
+    color: var(--light-text);
+    font-size: 16px;
+    outline: none;
+}
+
+.input-field::placeholder {
+    color: #bbb;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.remember-me input {
+    margin-right: 10px;
+}
+
+.forgot-password {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: text-decoration 0.3s;
+}
+
+.btn-submit {
+    width: 70%;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--light-text);
+    cursor: pointer;
+    /* Градієнт, як на кнопці "перейти" */
+    background: linear-gradient(90deg, #C06FE8, #8a50c8);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s;
+}
+
+.signup-link {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+:root {
+    --dark-bg: #222222;
+    --dark-card: #333333;
+    --accent-color: #C06FE8; /* Яскравий фіолетовий/пурпуровий */
+    --light-text: #FFFFFF;
+    --font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+    min-height: 100vh;
+}
+
+a {
+    color: var(--light-text);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+/* --- Header & Navigation (Заголовок та Навігація) --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #1a1a1a; /* Тонкий контраст до фону body */
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1;
+}
+
+.logo-name {
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--accent-color);
+    border-bottom: 3px solid var(--accent-color);
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+}
+
+.logo-slogan {
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: var(--light-text);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    color: var(--accent-color);
+}
+
+.btn-login {
+    background-color: var(--accent-color);
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+}
+
+.btn-login:hover {
+    background-color: #a050c8;
+}
+
+/* --- Main Hero Section (Головний блок) --- */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 80px;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 60%;
+    text-align: left;
+}
+
+.hero-title-main {
+    font-size: 100px;
+    font-weight: 900;
+    color: var(--accent-color);
+    line-height: 1;
+}
+
+.hero-slogan {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 20px;
+    line-height: 1.2;
+}
+
+/* --- Promotional Card (Промо-картка) --- */
+.promo-card {
+    flex: 0 0 400px; /* Фіксована ширина картки */
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    /* Градієнт для глибини, як на макеті */
+    background: linear-gradient(145deg, #303030, #252525); 
+}
+
+.promo-text {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: left;
+    color: var(--light-text);
+    line-height: 1.1;
+}
+
+.promo-image-container {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.promo-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    /* Можна додати трансформацію, щоб підняти зображення вище */
+    transform: translateY(-20px); 
+}
+
+.btn-promo {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    background: linear-gradient(90deg, #C06FE8, #8a50c8); /* Градієнт для кнопки */
+    padding: 15px 0;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s;
+}
+
+.btn-promo:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
