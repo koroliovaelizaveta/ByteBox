@@ -3,33 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ByteBox Tech Shop</title>
+    <title>ByteBox Tech Shop - Вхід</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header class="header">
-        <div class="logo">
+    <a href="index.html" class="logo-link">
+        <div class="logo"> 
             <span class="logo-name">BYTEBOX</span>
             <span class="logo-slogan">TECH SHOP</span>
         </div>
+    </a>
         <nav class="nav">
-            <a href="wishlist.html" class="nav-link" id="nav-wishlist">список бажань</a>
+            <a href="wish.html" class="nav-link" id="nav-wish">список бажань</a>
             <a href="catalog.html" class="nav-link" id="nav-catalog">каталог</a>
-            <a href="cart.html" class="nav-link" id="nav-cart">кошик</a>
-            <a href="login.html" class="btn-login" id="nav-login">увійти</a>
+            <a href="card.html" class="nav-link" id="nav-cart">кошик</a>
+            <a href="exit.html" class="btn-login" id="nav-login">увійти</a>
         </nav>
     </header>
 
     <main class="main-content">
-<main class="main-content">
         <div class="login-container">
             <form class="login-form">
                 <h2>Вхід</h2>
                 
-                <input type="text" class="input-field" placeholder="Адреса ел. пошти або номер телефону...">
-                <input type="password" class="input-field" placeholder="Ваш пароль...">
+                <input type="text" class="input-field" placeholder="Адреса ел. пошти або номер телефону..." required>
+                <input type="password" class="input-field" placeholder="Ваш пароль..." required>
                 
                 <div class="form-options">
                     <label class="remember-me">
@@ -47,8 +48,7 @@
             </form>
         </div>
     </main>
-        </main>
 
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
