@@ -3,27 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ByteBox Tech Shop</title>
+    <title>ByteBox Tech Shop - Кошик</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header class="header">
-        <div class="logo">
+        <a href="index.html" class="logo-link">
+        <div class="logo"> 
             <span class="logo-name">BYTEBOX</span>
             <span class="logo-slogan">TECH SHOP</span>
         </div>
+    </a>
         <nav class="nav">
-            <a href="wishlist.html" class="nav-link" id="nav-wishlist">список бажань</a>
+            <a href="wish.html" class="nav-link" id="nav-wish">список бажань</a>
             <a href="catalog.html" class="nav-link" id="nav-catalog">каталог</a>
-            <a href="cart.html" class="nav-link" id="nav-cart">кошик</a>
-            <a href="login.html" class="btn-login" id="nav-login">увійти</a>
+            <a href="card.html" class="nav-link" id="nav-cart">кошик</a>
+            <a href="exit.html" class="btn-login" id="nav-login">увійти</a>
         </nav>
     </header>
 
     <main class="main-content">
-      <main class="main-content">
         <div class="cart-header">
             <h2>Обрані вами товари</h2>
             <button class="btn-pay">ОПЛАТИТИ</button>
@@ -37,28 +38,27 @@
                 <div class="product-image-container">
                     <img src="https://i.postimg.cc/NGbGW8C8/i-Phone-17.png" alt="iPhone 17" class="product-image">
                 </div>
-                <div class="card-actions">
-                    <button class="btn-card btn-delete">видалити</button>
-                    <i class="far fa-heart icon-heart"></i>
-                </div>
+<div class="card-actions">
+    <button class="btn-card btn-delete-cart">видалити</button>
+    <i class="far fa-heart icon-heart"></i>
+</div>
             </div>
 
             <div class="product-card">
                 <h3 class="product-title">Apple Watch Series 11</h3>
                 <p class="product-price">22.999 ₴</p>
                 <div class="product-image-container">
-                    <img src="https://i.postimg.cc/T3x61psM/Mac-Book-Air-M4.png" alt="Apple Watch S11" class="product-image">
+                    <img src="https://i.postimg.cc/ydg5vH56/Apple-Watch-Series-11.png" alt="Apple Watch S11" class="product-image">
                 </div>
-                <div class="card-actions">
-                    <button class="btn-card btn-delete">видалити</button>
-                    <i class="far fa-heart icon-heart"></i>
-                </div>
+<div class="card-actions">
+    <button class="btn-card btn-delete-cart">видалити</button>
+    <i class="far fa-heart icon-heart"></i>
+</div>
             </div>
 
         </div>
     </main>
-        </main>
 
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
